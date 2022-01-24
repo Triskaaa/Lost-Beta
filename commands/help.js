@@ -31,6 +31,9 @@ module.exports = {
 
   💌 **Invite Tracker :**
   \`setinvitejoinchannel\`, \`setinviteleavechannel\`, \`invites-lb\`, \`inviter\`, \`invites\`
+  
+  :books: **ModLog :**
+  \`setup-modlogs\`
 
   :tada: **Giveaways :** *beta*
   \`giveaway\`
