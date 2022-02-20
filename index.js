@@ -47,7 +47,8 @@ bot.status({
 
 // Bot n Utility Variables
 bot.variables({
-  prefix: "dreams."
+  prefix: "dreams.",
+  ownerEco: "921093686148886619" // Put your id here
 })
 // Giveaway Variables
 bot.variables({
@@ -504,7 +505,6 @@ $globalCooldown[3m;To prevent exploitations, a cooldown is in effect for opening
  
  
 bot.variables({
-  prefix: "*",
     XP: "0",
     Bank: "0",
     Wallet: "0",
@@ -731,7 +731,7 @@ $color[RANDOM]
 
 $onlyIf[$noMentionMessage!=;**⛔ Please enter a amount of money to add.**]
 $onlyIf[$mentioned[1]!=;**⛔ Please mention someone.**]
-$onlyPerms[admin;**⛔ You can't do this.**]` 
+$onlyForIDs[$getVar[ownerEco];**⛔ You can't do this.**]` 
 })
 
 bot.command({
@@ -744,7 +744,7 @@ $color[RANDOM]
 
 $onlyIf[$noMentionMessage!=;**⛔ Please enter a amount of money to remove.**]
 $onlyIf[$mentioned[1]!=;**⛔ Please mention someone.**]
-$onlyPerms[admin;**⛔ You can't do this.**]` 
+$onlyForIDs[$getVar[ownerEco];**⛔ You can't do this.**]` 
 })
 
 bot.command({
